@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class DemoTest {
@@ -24,5 +25,6 @@ public void demo() {
 	driver.findElement(By.id("Email")).sendKeys(email);
 	driver.findElement(By.id("Password")).sendKeys(password);
 	driver.findElement(By.xpath("//input[@value='Log in']")).click();
+	Reporter.log("print",true);
 }
 }
