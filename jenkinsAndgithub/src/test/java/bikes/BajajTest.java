@@ -17,6 +17,7 @@ public class BajajTest {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		driver.get("https://www.bajajauto.com/");
 		Reporter.log("Bajaj",true);
-	}
+		Reporter.log("bbbjjjj",true);
+		}
 
 }
